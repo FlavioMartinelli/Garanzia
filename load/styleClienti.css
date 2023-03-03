@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(sfondo3.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+a:hover {
+    color: #E42313;
+}
+
+h1 {
+    font-size: 4em;
+    color: #E42313;
+}
+
+img {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+}
+
+table {
+    width: 70%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 5px;
+
+}
+
+th {
+    text-align: center;
+    border-bottom: solid 1px #E42313;
+    color: #E42313;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+td {
+    width: 14%;
+    color: black;
+    text-align: center;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.425);
+    font-weight: 600;
+    padding: 5px;
+}
+
+button {
+    border: solid 1px #E42313;
+    min-width: 30px;
+    min-height: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #E42313;
+    transition: all;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: #E42313;
+}

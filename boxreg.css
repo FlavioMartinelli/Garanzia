@@ -1,0 +1,221 @@
+.boxgaranzia {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.boxgaranzia,
+.boxgaranzia h1,
+.boxgaranzia h2,
+.boxgaranzia h3,
+.boxgaranzia p {
+    font-family: Open Sans;
+    font-style: normal;
+}
+
+.boxgaranzia h1 {
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+
+.boxgaranzia h2 {
+    margin-bottom: 3px;
+    margin-top: 40px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.boxgaranzia h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.leftside {
+    width: 23%;
+    height: 100%;
+    background-image: url(img/simon-caspersen-oJ7SV6vQfBA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+.leftside #logo {
+    width: 80%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leftside .ad {
+    width: 80%;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.rightside {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headgaranzia {
+    height: 25%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.contentgaranzia {
+    height: 70%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footgaranzia {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    margin: 0;
+    font-weight: 200;
+    font-size: .4em;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+}
+
+.footgaranzia a {
+    text-decoration: none;
+    color: black;
+}
+
+.garanziaButton {
+    border: none;
+    background-color: #DA0711;
+    background: #E42313;
+    border-radius: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+    width: 197px;
+    height: 42px;
+}
+
+.garanziaButton:hover {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.55);
+}
+
+.garanziaButton:disabled,
+.garanziaButton[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.registrazione {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.registrazione div {
+    margin: 5px;
+    flex: 1 0 21%;
+    min-width: 100px;
+}
+
+#formregistrazione input[type="text"],
+.registrazione input[type='email'],
+.registrazione input[type='phone'] {
+    height: 37px;
+    width: 60%;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: all .3s ease;
+}
+
+.registrazione input[type='text'],
+.registrazione input[type='email'],
+.registrazione input[type='phone'] {
+    width: 100% !important;
+    height: 37px;
+}
+
+#formregistrazione input,
+#formregistrazione label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#formregistrazione label {
+    margin-top: 10px;
+}
+
+#formregistrazione input:focus {
+    outline: none;
+    border-color: #E42313;
+    box-shadow: 4px 4px 9px rgba(228, 36, 19, 0.219);
+    outline: none;
+}
+
+#formregistrazione input[type="mail"]:valid,
+#formregistrazione input[type="text"]:valid,
+#formregistrazione input[type="phone"]:valid {
+    border-color: #19AB16;
+    box-shadow: 4px 4px 9px rgba(25, 171, 22, 0.212);
+}
+
+.datifattura{
+    float:left;
+    margin-right:5px;
+    margin-left: 5px;
+}
+
+.fDati{
+    margin-right: 5px;
+}
+
+.infoicon{
+    color: #E42313;
+    font-size: .7em;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#imgInfo{
+    pointer-events: none;
+    visibility: hidden;
+}
+.infoicon:hover ~ #imgInfo{
+    visibility: visible;
+}

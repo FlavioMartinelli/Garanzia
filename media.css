@@ -1,0 +1,178 @@
+@media only screen and (max-width: 765px) {
+    .boxgaranzia {
+        display: block;
+        position: relative;
+        overflow: auto;
+        height: auto;
+        min-height: 664px;
+    }
+
+    .leftside {
+        display: none;
+    }
+
+    .rightside {
+        width: calc(100% - 20px);
+        height: auto;
+        overflow: hidden;
+        overflow-x: hidden;
+        min-height: 1px;
+        display: block;
+    }
+
+    #formFattura {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    #formFattura .garanziaButton {
+        justify-self: center;
+    }
+
+    #checkfoot {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    #checkfoot button {
+        width: 40%;
+    }
+
+
+    .contentgaranzia {
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+
+    .contentgaranzia h1 {
+        font-weight: 600 !important;
+        font-size: 1em !important;
+    }
+
+    .generali,
+    .prodotti {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .generali {
+        height: 50%;
+    }
+
+    #formregistrazione h2 {
+        margin-top: 10px;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #imgInfo {
+        flex: 1 0 90%;
+        width: 10%;
+        visibility: visible;
+        object-fit: contain;
+    }
+
+    .registrazione {
+        position: relative;
+    }
+
+    .datifattura {
+        float: none;
+    }
+
+    .headgaranzia {
+        height: auto;
+    }
+
+    #nFattura {
+        width: 100% !important;
+        margin: 5px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .infoGenerali {
+        height: auto;
+    }
+
+    .prodotti {
+        height: auto;
+    }
+
+    #ncommessa {
+        width: 100% !important;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .boxgaranzia h1 {
+        font-weight: 800;
+        font-size: 1.8em;
+    }
+
+    .titleGar {
+        width: 100%;
+        border-bottom: solid 1px #E4231333;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    .footgaranzia {
+        min-height: 100px;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #ticket {
+        order: 0;
+        width: 60%;
+    }
+
+    .footgaranzia p {
+        order: 1;
+    }
+
+    .fDati {
+        width: calc(100% - 10px);
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: relative;
+    }
+
+    .fDati .datifattura {
+        margin-left: 0px;
+        margin-right: 100px;
+    }
+
+    .scaduta,
+    .nonScaduta {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .boxgaranzia th{
+        font-size: .8em;
+    }
+
+    .garanziaButton:first-of-type{
+        margin-left: 0;
+    }
+
+
+}

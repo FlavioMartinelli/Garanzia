@@ -1,0 +1,49 @@
+.dettagliGaranzia {
+    visibility: hidden;
+}
+
+.procediBox{
+    height: 100%;
+    width: 90%;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.procediBox select{
+    margin-bottom: 15px;
+}
+
+.procediBox #oggettolabel{
+    margin-bottom: 15px;
+    width: 50%;
+}
+.procediBox #oggettolabel input{
+    width: 100%;
+}
+
+.procediBox textarea{
+    width: 50%;
+}
+
+.procediBox input[type="submit"]{
+    padding: 10px 15px 10px 15px;
+    background-color: #E42313;
+    border: none;
+    border-radius: 12px;
+    min-height: 42px;
+    min-width: 100px;
+    color: white;
+    font-family: Open Sans;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#currentRif{
+    margin-top: 25px;
+}

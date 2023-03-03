@@ -1,0 +1,8 @@
+[03-May-2020 21:34:43 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function init_set() in /home/sidelsrl/public_html/garanzia2/creaTicket.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/sidelsrl/public_html/garanzia2/creaTicket.php on line 4
+[03-May-2020 21:45:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function ssh2_connect() in /home/sidelsrl/public_html/garanzia2/creaTicket.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/sidelsrl/public_html/garanzia2/creaTicket.php on line 7

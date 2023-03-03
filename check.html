@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controllo Garanzia</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="boxprocedi.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--
+    <p style="text-align: center;top: 0;">Per caricare una fattura (backend) clicca <a href="load/index.html">qui</a>
+    </p>
+-->
+    <p style="text-align: center;top: 0;">Per registrare un prodotto clicca <a href="index.html">qui</a></p>
+
+    <div class="boxgaranzia">
+        <div class="leftside">
+            <img src="img/sidelLogoGaranzie.png" alt="" id="logo">
+            <a href="https://www.sidelsrl.it/sidel-finestra-in-legno-alluminio-ideale/" target="_blank"><img
+                    src="img/zero-manutenzione-1-1024x696-2.jpg" alt="" srcset="" class="ad"></a>
+        </div>
+
+        <div class="rightside">
+            <div class="headgaranzia">
+                <h1 class="titleGar">Controlla lo stato della tua garanzia</h1>
+                <h2>Dati prodotto</h2>
+                <h3>Numero Commessa</h3>
+                <form action="checkIfRegistrata.php" method="POST" id="formFattura">
+                    <input type="text" name="nFattura" id="nFattura" required>
+                    <input type="submit" value="Controlla garanzia" class="garanziaButton">
+                </form>
+            </div>
+
+            <div class="contentgaranzia">
+
+                <div class="generali" id="infoGenerali">
+                    <h1>Info Generali</h1>
+                </div>
+
+                <div class="prodotti" id="infoProdotti">
+                    <h1>Prodotti</h1>
+                </div>
+                <div id="listaRif"></div>
+                <form class="procediBox">
+
+                    <label for="allProblem">Tutti i prodotti presentano lo stesso problema <input type="checkbox"
+                            onchange="test();" name='allProblem' id="allProbl"></label>
+
+                    <div>
+                        <select name="currentRif" id="currentRif" onchange="setRiferimentoDett()" disabled>
+                            <option value="0" selected='selected' disabled>Seleziona riferimento</option>
+                        </select>
+                        <select name="componente" id="componente" required disabeld onchange="setComponente()">
+                            <option value="0" selected="selected" disabled>Componente</option>
+                            <option value="1" id="legno">Legno</option>
+                            <option value="2" id="vetro">Vetro</option>
+                            <option value="3" id="ferramenta">Ferramenta</option>
+                        </select>
+                        <select name="priorita" id="priorita" required disabeld onchange="setPrior();">
+                            <option value="0" selected='selected' disabled>Priorità</option>
+                            <option value="1">Bassa</option>
+                            <option value="2">Media</option>
+                            <option value="3">Alta</option>
+                        </select>
+                    </div>
+                    <label for="oggetto" id="oggettolabel">Oggetto
+                        <input type="text" name="oggetto" id="oggetto" required disabeld
+                            onchange="setOgg(this);"></label>
+                    <textarea name="messaggio" id="messaggio" cols="30" rows="10" placeholder="Messaggio..." required
+                        disabeld onchange="setMess(this);"></textarea>
+                </form>
+            </div>
+
+
+            <div class="footgaranzia" id="checkfoot">
+                <p>L’invio di questo modulo, implica il consenso al trattamento dei dati secondo la normativa sulla
+                    privacy
+                    consultabile a questo link • <a href="https://www.sidelsrl.it/privacy/">Privacy Policy</a></p>
+                <button id="procedi" type="button" class="garanziaButton" onclick="javascript:setProcedi()"
+                    disabled>Procedi</button>
+                <button class="garanziaButton" onclick="inviaGaranzia();" id="ticketBtn" disabled>Apri Ticket</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <iframe src="" frameborder="0" id="frameTicket">
+    </iframe>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js">
+    </script>
+    <script src="checkscript.js"></script>
+</body>
+
+</html>
